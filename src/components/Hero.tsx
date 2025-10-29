@@ -1,56 +1,23 @@
-import { ArrowRight, Play, ChevronLeft, ChevronRight } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { ArrowRight, Play } from 'lucide-react';
 
 export default function Hero() {
-  const [currentBg, setCurrentBg] = useState(0);
-
-  const backgroundImages = [
-    "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg",
-    "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg",
-    "https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg",
-    "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
-    "https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg"
-  ];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentBg((prev) => (prev + 1) % backgroundImages.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Images */}
-      {backgroundImages.map((image, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-all duration-1000 ease-out transform ${
-            currentBg === index ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
-          }`}
-        >
-          <img
-            src={image}
-            alt="background"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 to-transparent"></div>
-        </div>
-      ))}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-navy-900">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-900/80 to-transparent"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
 
           <h1 className="font-sans text-5xl sm:text-6xl lg:text-7xl text-white mb-8 leading-tight">
-            Building the Future with{' '}
+            Paving the Way Forward with{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 font-normal">
-              Precision & Passion
+              Advanced Road Solutions
             </span>
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-200 mb-12 leading-relaxed max-w-3xl mx-auto font-light">
-            MargiInfra delivers world-class infrastructure and construction solutions that transform visions into architectural excellence.
+            MargiInfra specializes in state-of-the-art road construction and logistics, connecting communities and enabling progress.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -69,10 +36,10 @@ export default function Hero() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-24">
             {[
-              { number: '18+', label: 'Years Experience' },
-              { number: '500+', label: 'Projects Completed' },
-              { number: '200+', label: 'Happy Clients' },
-              { number: '50+', label: 'Expert Team' },
+              { number: '1,000+ km', label: 'Roads Constructed' },
+              { number: '500+', label: 'Logistics Projects' },
+              { number: '200+', label: 'Satisfied Partners' },
+              { number: '18+', label: 'Years of Expertise' },
             ].map((stat, index) => (
               <div key={index} className="backdrop-blur-sm bg-white/5 p-8 rounded-xl text-center transform hover:scale-105 transition-all border border-white/10 hover:border-gold-500/30">
                 <div className="text-4xl font-light bg-gradient-to-r from-gold-300 to-gold-500 bg-clip-text text-transparent mb-2">{stat.number}</div>
@@ -82,18 +49,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Background navigation dots */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex gap-3">
-          {backgroundImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentBg(index)}
-              className={`h-1 transition-all ${
-                currentBg === index ? 'w-8 bg-gold-400' : 'w-4 bg-white/30'
-              } rounded-full hover:bg-gold-400/50`}
-            />
-          ))}
-        </div>
       </div>
 
       {/* Scroll indicator */}

@@ -37,7 +37,7 @@ export default function Footer() {
               <span className="font-display font-bold text-2xl text-white">MargiInfra</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Building the future with precision and passion. Your trusted partner in construction excellence since 2005.
+              Building the future with precision and passion. Your trusted partner in construction excellence.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -93,20 +93,21 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="text-gold-500 flex-shrink-0 mt-1" size={20} />
                 <span className="text-gray-400">
-                  123 Construction Avenue<br />
-                  Mumbai, Maharashtra 400001
+                  18, Station Road, <br />
+                  Ambav, Thasra, Kheda, Gujarat - 388235
+
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-gold-500 flex-shrink-0" size={20} />
-                <a href="tel:+919876543210" className="text-gray-400 hover:text-gold-500 transition-colors">
-                  +91 98765 43210
+                <a href="tel:+918780135906" className="text-gray-400 hover:text-gold-500 transition-colors">
+                  +91 87801 35906
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-gold-500 flex-shrink-0" size={20} />
-                <a href="mailto:info@margiinfra.com" className="text-gray-400 hover:text-gold-500 transition-colors">
-                  info@margiinfra.com
+                <a href="mailto:margiinfra05@gmail.com" className="text-gray-400 hover:text-gold-500 transition-colors">
+                  margiinfra05@gmail.com
                 </a>
               </li>
             </ul>

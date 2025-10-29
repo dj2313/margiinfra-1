@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function FloatingWhatsAppButton() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '919876543210'; // Replace with your WhatsApp number
+    const phoneNumber = '918780135906'; // Replace with your WhatsApp number
     const message = 'Hi! I would like to know more about your construction services.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

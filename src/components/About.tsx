@@ -5,22 +5,22 @@ export default function About() {
     {
       icon: Award,
       title: 'Quality Excellence',
-      description: 'We maintain the highest standards in every project, ensuring durability and precision.',
+      description: 'We use top-grade materials and advanced techniques to build durable and safe roads.',
     },
     {
       icon: Users,
       title: 'Expert Team',
-      description: 'Our skilled professionals bring decades of combined experience to every build.',
+      description: 'Our engineers and logistics experts bring extensive experience to every project.',
     },
     {
       icon: Target,
       title: 'Client Focus',
-      description: 'Your vision drives our mission. We deliver exactly what you envision and more.',
+      description: 'Your goals are our priority. We deliver tailored solutions for your transport needs.',
     },
     {
       icon: TrendingUp,
       title: 'Innovation',
-      description: 'Embracing cutting-edge technology and sustainable construction practices.',
+      description: 'Leveraging the latest in road construction and logistics technology for efficiency.',
     },
   ];
 
@@ -31,45 +31,23 @@ export default function About() {
           <div>
             <span className="text-gold-600 font-semibold text-sm tracking-wider uppercase">About MargiInfra</span>
             <h2 className="font-display font-bold text-4xl lg:text-5xl text-navy-900 mt-4 mb-6 leading-tight">
-              Building Landmarks That Stand the Test of Time
+              Engineering the Arteries of Commerce and Community
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Since 2005, MargiInfra has been at the forefront of innovative construction and infrastructure development. We specialize in creating spaces that blend functionality with architectural brilliance.
+              MargiInfra has been a leader in road construction and transport logistics. We specialize in developing robust infrastructure that facilitates economic growth and connectivity.
             </p>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Our commitment to quality, safety, and sustainability has made us a trusted partner for both residential and commercial projects across the region.
+              Our dedication to quality, efficiency, and safety has made us a preferred partner for public and private sector transportation projects.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <div className="bg-navy-900 text-white px-6 py-3 rounded-lg">
-                <div className="text-2xl font-display font-bold">500+</div>
-                <div className="text-sm text-gray-300">Projects Delivered</div>
+                <div className="text-2xl font-display font-bold">1,000+ km</div>
+                <div className="text-sm text-gray-300">Roads Paved</div>
               </div>
               <div className="bg-gold-500 text-white px-6 py-3 rounded-lg">
                 <div className="text-2xl font-display font-bold">100%</div>
                 <div className="text-sm">Client Satisfaction</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Construction site"
-                className="w-full h-[500px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent"></div>
-            </div>
-            <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-xl max-w-xs">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gold-500 rounded-lg flex items-center justify-center">
-                  <Award className="text-white" size={24} />
-                </div>
-                <div>
-                  <div className="font-bold text-navy-900">ISO Certified</div>
-                  <div className="text-sm text-gray-600">Quality Assurance</div>
-                </div>
               </div>
             </div>
           </div>

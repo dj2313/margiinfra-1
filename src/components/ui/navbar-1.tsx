@@ -39,7 +39,9 @@ const Navbar1 = () => {
       }}
     >
       <div className={`flex items-center justify-between px-8 ${scrolled ? 'py-2' : 'py-3'} 
-        ${isDark ? 'bg-navy-800/90' : 'bg-white/90'} 
+        ${isDark 
+          ? (scrolled ? 'bg-navy-800' : 'bg-navy-800/90') 
+          : (scrolled ? 'bg-white' : 'bg-white/90')} 
         backdrop-blur-md rounded-full shadow-lg w-full max-w-7xl relative transition-all duration-300`}>
         
         <div className="flex items-center">
@@ -49,21 +51,50 @@ const Navbar1 = () => {
             animate={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
           >
-            {/* Logo SVG */}
-            <div className="w-8 h-8">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="16" fill="url(#paint0_linear)" />
+            {/* Updated Logo */}
+            <div className="w-10 h-10 relative">
+              <svg 
+                viewBox="0 0 40 40" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-full h-full"
+              >
+                <rect width="40" height="40" rx="8" fill="url(#gradient)" />
+                <path 
+                  d="M12 28V12L16 14L20 26L24 14L28 12V28" 
+                  stroke="white" 
+                  strokeWidth="2.5" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                />
                 <defs>
-                  <linearGradient id="paint0_linear" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <linearGradient 
+                    id="gradient" 
+                    x1="0" 
+                    y1="0" 
+                    x2="40" 
+                    y2="40" 
+                    gradientUnits="userSpaceOnUse"
+                  >
                     <stop stopColor="#60A5FA" />
                     <stop offset="1" stopColor="#3B82F6" />
                   </linearGradient>
                 </defs>
               </svg>
+              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg" />
             </div>
-            <span className={`text-lg font-semibold ${isDark ? 'text-white' : 'text-gray-900'}`}>
-              MargiInfra
-            </span>
+            <div className="flex flex-col">
+              <span className={`text-xl font-bold tracking-tight ${
+                isDark ? 'text-white' : 'text-gray-900'
+              }`}>
+                MARGI
+              </span>
+              <span className={`text-sm font-medium ${
+                isDark ? 'text-blue-400' : 'text-blue-600'
+              }`}>
+                INFRA
+              </span>
+            </div>
           </motion.div>
         </div>
         

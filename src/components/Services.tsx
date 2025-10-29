@@ -1,42 +1,42 @@
-import { Building2, Hammer, Home, Lightbulb, Cog, Shield } from 'lucide-react';
+import { Building, Truck, Route, Wrench, Shield, Cog } from 'lucide-react';
 
 export default function Services() {
   const services = [
     {
-      icon: Building2,
-      title: 'Infrastructure Development',
-      description: 'Large-scale infrastructure projects including roads, bridges, and urban development.',
-      features: ['Highway Construction', 'Bridge Engineering', 'Urban Planning'],
+      icon: Building,
+      title: 'Road Construction',
+      description: 'Building durable and high-quality roads, from highways to rural access.',
+      features: ['Asphalt & Concrete Paving', 'Highway Construction', 'Bridge Engineering'],
     },
     {
-      icon: Home,
-      title: 'Residential Construction',
-      description: 'Premium residential projects from luxury villas to modern apartment complexes.',
-      features: ['Luxury Villas', 'Apartments', 'Gated Communities'],
+      icon: Truck,
+      title: 'Logistics & Transport',
+      description: 'Efficient and reliable logistics solutions for seamless supply chain management.',
+      features: ['Fleet Management', 'Supply Chain Optimization', 'Warehousing'],
     },
     {
-      icon: Hammer,
-      title: 'Commercial Buildings',
-      description: 'State-of-the-art commercial spaces designed for modern business needs.',
-      features: ['Office Complexes', 'Shopping Centers', 'Industrial Units'],
+      icon: Route,
+      title: 'Infrastructure Planning',
+      description: 'Strategic planning and design for robust and sustainable transportation networks.',
+      features: ['Feasibility Studies', 'Route Optimization', 'Urban Transport Planning'],
     },
     {
-      icon: Lightbulb,
-      title: 'Smart Buildings',
-      description: 'Intelligent building solutions with integrated automation and sustainability.',
-      features: ['IoT Integration', 'Energy Efficient', 'Automated Systems'],
+      icon: Wrench,
+      title: 'Maintenance & Repair',
+      description: 'Comprehensive maintenance services to ensure the longevity of road networks.',
+      features: ['Pothole Repair', 'Resurfacing', 'Bridge Maintenance'],
+    },
+    {
+      icon: Shield,
+      title: 'Safety & Compliance',
+      description: 'Ensuring all projects meet the highest safety standards and regulatory requirements.',
+      features: ['Traffic Management', 'Safety Audits', 'Regulatory Compliance'],
     },
     {
       icon: Cog,
       title: 'Project Management',
-      description: 'End-to-end project management ensuring timely delivery and quality control.',
-      features: ['Planning & Design', 'Execution', 'Quality Control'],
-    },
-    {
-      icon: Shield,
-      title: 'Renovation & Restoration',
-      description: 'Expert renovation services that breathe new life into existing structures.',
-      features: ['Structural Upgrades', 'Modern Interiors', 'Heritage Restoration'],
+      description: 'End-to-end management for timely and budget-conscious project delivery.',
+      features: ['Planning & Execution', 'Quality Control', 'Stakeholder Management'],
     },
   ];
 
@@ -48,10 +48,10 @@ export default function Services() {
         <div className="text-center mb-16">
           <span className="text-gold-500 font-semibold text-sm tracking-wider uppercase">Our Services</span>
           <h2 className="font-display font-bold text-4xl lg:text-5xl text-white mt-4 mb-6">
-            Comprehensive Construction Solutions
+            Specialized Road & Logistics Services
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            From concept to completion, we deliver exceptional results across all construction domains.
+            From planning to execution, we provide a full spectrum of services for transport infrastructure.
           </p>
         </div>
 

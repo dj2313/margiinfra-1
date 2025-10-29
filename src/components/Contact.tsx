@@ -18,22 +18,20 @@ export default function Contact() {
       icon: Phone,
       title: 'Call Us',
       details: [
-        { number: '+919876543210', formatted: '+91 98765 43210' },
-        { number: '+919876543211', formatted: '+91 98765 43211' }
+        { number: '+918780135906', formatted: '+91 87801 35906' },
       ],
     },
     {
       icon: Mail,
       title: 'Email Us',
       details: [
-        { email: 'info@margiinfra.com' },
-        { email: 'projects@margiinfra.com' }
+        { email: 'margiinfra05@gmail.com' },
       ],
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['123 Construction Avenue', 'Mumbai, Maharashtra 400001'],
+      details: ['18, Station Road, Ambav, Thasra, Kheda, Gujarat - 388235'],
     },
     {
       icon: Clock,
@@ -289,7 +287,7 @@ export default function Contact() {
 
             <div className="rounded-2xl overflow-hidden shadow-xl h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995206862!3d19.082177513715483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1652444456789!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=18%2C%20Station%20Road%2C%20Ambav%2C%20Thasra%2C%20Kheda%2C%20Gujarat%20-%20388235&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
