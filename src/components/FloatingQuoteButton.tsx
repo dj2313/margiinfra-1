@@ -39,13 +39,13 @@ export default function FloatingQuoteButton() {
               Get Free Consultation
             </a>
             <a
-              href="tel:+919876543210"
+              href="tel:+918780135906"
               className="block w-full bg-navy-900 text-white text-center px-4 py-3 rounded-lg font-semibold hover:bg-navy-800 transition-all"
             >
               Call Now
             </a>
             <a
-              href="mailto:info@margiinfra.com"
+              href="mailto:margiinfra05@gmail.com"
               className="block w-full border-2 border-navy-900 text-navy-900 text-center px-4 py-3 rounded-lg font-semibold hover:bg-navy-900 hover:text-white transition-all"
             >
               Send Email
